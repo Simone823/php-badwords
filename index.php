@@ -22,7 +22,7 @@
     $word_user_censored = str_replace($word_user, '***', $word_user);
     
     // Testo paragrafo con parola utente censurata
-    $text_censored = str_replace($word_user, '***', $text);
+    $text_censored = str_replace($word_user, $word_user_censored, $text);
 
 ?>
 
