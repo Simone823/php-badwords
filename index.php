@@ -15,6 +15,12 @@
     // Lunghezza text
     $text_length = strlen($text);
 
+    // Parola utente
+    $word_user = $_GET['parola'];
+
+    // Parola utente censurata
+    $word_user_censored = str_replace($word_user, '*****', $word_user)
+
 ?>
 
 <!DOCTYPE html>
@@ -32,14 +38,26 @@
         
         <!-- Riga 1 -->
         <div class="row_1">
-            <!-- Titolo paragrafo-->
+            <!-- Titolo -->
             <h3>Paragrafo:</h3>
             <!-- Paragrafo -->
-            <p><?php echo $text;?></p>
-            <!-- Titolo lunghezza paragrafo -->
+            <p><?php echo $text; ?></p>
+            <!-- Titolo -->
             <h3>Lunghezza paragrafo:</h3>
             <!-- Lunghezza paragrafo -->
             <p><?php echo $text_length;?></p>
+        </div>
+
+        <!-- Riga 2 -->
+        <div class="row_2">
+            <!-- Titolo -->
+            <h3>Parola utente:</h3>
+            <!-- Parola utente-->
+            <p><?php echo $word_user; ?></p>
+            <!-- Titolo -->
+            <h3>Parola utente censurata:</h3>
+            <!-- Parola utente censurata -->
+            <p><?php echo $word_user_censored ?></p>
         </div>
 
     </div>
