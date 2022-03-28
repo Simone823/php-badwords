@@ -17,9 +17,12 @@
 
     // Parola utente
     $word_user = $_GET['parola'];
-
+    
     // Parola utente censurata
-    $word_user_censored = str_replace($word_user, '*****', $word_user)
+    $word_user_censored = str_replace($word_user, '***', $word_user);
+    
+    // Testo paragrafo con parola utente censurata
+    $text_censored = str_replace($word_user, '***', $text);
 
 ?>
 
@@ -58,6 +61,10 @@
             <h3>Parola utente censurata:</h3>
             <!-- Parola utente censurata -->
             <p><?php echo $word_user_censored ?></p>
+            <!-- Titolo -->
+            <h3>Paragrafo con parola utente censurata:</h3>
+            <!-- Paragrafo con parola utente censurata -->
+            <p><?php echo $text_censored; ?></p>
         </div>
 
     </div>
