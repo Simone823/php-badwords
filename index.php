@@ -24,6 +24,9 @@
     // Testo paragrafo con parola utente censurata
     $text_censored = str_replace($word_user, $word_user_censored, $text);
 
+    // Lunghezza testo censurato
+    $text_censored_length = strlen($text_censored);
+
 ?>
 
 <!DOCTYPE html>
@@ -65,6 +68,10 @@
             <h3>Paragrafo con parola utente censurata:</h3>
             <!-- Paragrafo con parola utente censurata -->
             <p><?php echo $text_censored; ?></p>
+            <!-- Titolo -->
+            <h1>Lunghezza paragrafo censurato:</h1>
+            <!-- Lunghezza paragrafo censurato -->
+            <p><?php echo $text_censored_length; ?></p>
         </div>
 
     </div>
