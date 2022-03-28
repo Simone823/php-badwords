@@ -69,7 +69,7 @@
             <!-- Paragrafo con parola utente censurata -->
             <p><?php echo $text_censored; ?></p>
             <!-- Titolo -->
-            <h1>Lunghezza paragrafo censurato:</h1>
+            <h3>Lunghezza paragrafo censurato:</h3>
             <!-- Lunghezza paragrafo censurato -->
             <p><?php echo $text_censored_length; ?></p>
         </div>
